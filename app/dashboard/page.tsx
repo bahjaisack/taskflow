@@ -6,11 +6,14 @@ import KanbanBoard from "../components/KanbanBoard";
 export default async function DashboardPage() {
   const session = await auth();
 
-  if (!session?.user) {
-    redirect("/api/auth/signin");
+  // Guard both session and user.id to satisfy TypeScript
+  if (!session?.user?.id) {
+    redirect("/login");
   }
 
-  const userTasks = await getTasks(session.user.id);
+  // Extracted user ID with a guaranteed string type
+  const userId = session.user.id;
+  const userTasks = await getTasks(userId);
 
   return (
     <div className="min-h-screen bg-stone-50 dark:bg-stone-950">
@@ -69,7 +72,7 @@ export default async function DashboardPage() {
       </header>
 
       <main className="py-6">
-        <KanbanBoard initialTasks={userTasks} userId={session.user.id} />
+        <KanbanBoard initialTasks={userTasks} userId={userId} />
       </main>
     </div>
   );
