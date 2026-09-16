@@ -59,7 +59,7 @@ export default async function DashboardPage() {
             >
               <button
                 type="submit"
-                className="px-3 py-1.5 text-xs font-medium text-stone-600 hover:text-red-600 dark:text-stone-400 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/40 rounded-lg border border-stone-200 dark:border-stone-800 transition"
+                className="px-3 py-1.5 text-xs font-medium text-stone-600 hover:text-indigo-600 dark:text-stone-400 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 rounded-lg border border-stone-200 dark:border-stone-800 transition"
               >
                 Log Out
               </button>

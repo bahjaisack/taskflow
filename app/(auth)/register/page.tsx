@@ -5,11 +5,9 @@ export default function RegisterPage() {
     <div className="flex min-h-screen items-center justify-center bg-slate-50 px-4">
       <div className="w-full max-w-md rounded-xl bg-white p-8 shadow-md">
         <h2 className="text-2xl font-bold text-slate-900 text-center">
-          Create TaskFlow Account
+          Create Account
         </h2>
-        <p className="mt-2 text-sm text-center text-slate-600">
-          Sign up instantly using your favorite provider
-        </p>
+      
 
         <div className="mt-6 space-y-3">
           <form
@@ -20,7 +18,7 @@ export default function RegisterPage() {
           >
             <button
               type="submit"
-              className="w-full flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 transition"
+              className="w-full flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white py-2.5 text-sm font-medium text-slate-700 hover:bg-indigo-50 transition"
             >
               Sign up with Google
             </button>
@@ -34,7 +32,7 @@ export default function RegisterPage() {
           >
             <button
               type="submit"
-              className="w-full flex items-center justify-center gap-2 rounded-lg bg-slate-900 py-2.5 text-sm font-medium text-white hover:bg-slate-800 transition"
+              className="w-full flex items-center justify-center gap-2 rounded-lg bg-indigo-900 py-2.5 text-sm font-medium text-white hover:bg-indigo-800 transition"
             >
               Sign up with GitHub
             </button>

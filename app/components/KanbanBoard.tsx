@@ -126,7 +126,7 @@ export default function KanbanBoard({
       <div className="flex justify-between items-center bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 p-4 rounded-xl shadow-sm">
         <div>
           <h2 className="font-bold text-stone-900 dark:text-stone-100">
-            Kanban Board
+            Task Board
           </h2>
           <p className="text-xs text-stone-500">
             Manage and organize your current tasks
