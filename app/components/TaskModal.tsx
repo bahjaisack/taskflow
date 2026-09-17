@@ -107,7 +107,7 @@ export default function TaskModal({
                 setTitle(e.target.value);
                 if (error) setError(null);
               }}
-              placeholder="e.g. Design Landing Page"
+              placeholder="Title..."
               className="w-full px-3 py-2 rounded-lg border border-stone-300 dark:border-stone-700 bg-stone-50 dark:bg-stone-800 text-stone-900 dark:text-stone-100 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
             />
           </div>
@@ -119,7 +119,7 @@ export default function TaskModal({
             <textarea
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              placeholder="Add task context or acceptance criteria..."
+              placeholder="Description..."
               rows={3}
               className="w-full px-3 py-2 rounded-lg border border-stone-300 dark:border-stone-700 bg-stone-50 dark:bg-stone-800 text-stone-900 dark:text-stone-100 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
             />
