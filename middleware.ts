@@ -5,7 +5,7 @@ export default auth((req) => {
   const isDashboard = req.nextUrl.pathname.startsWith("/dashboard");
 
   if (isDashboard && !isLoggedIn) {
-    return Response.redirect(new URL("/api/auth/signin", req.nextUrl));
+    return Response.redirect(new URL("/login", req.nextUrl));
   }
 });
 
